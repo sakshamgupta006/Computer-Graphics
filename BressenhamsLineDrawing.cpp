@@ -77,13 +77,13 @@ int main(int argc, char const *argv[]) {
     }else{
 
       if(m >= 0){
-        dX = pk <= 0 ? 0 : 1;
+        dX = pk <= 0 ? 0 : -1;
         pk = pk + (2*delX) - (2*delY*dX);
         xk += pk <= 0 ? 0 : 1;
         yk += dY;
       }
       else{
-        dX = pk <= 0 ? 0 : -1;
+        dX = pk <= 0 ? 0 : 1;
         pk = pk + (2*delX) - (2*delY*dX);
         xk += pk <= 0 ? 0 : 1;;
         yk += dY;
