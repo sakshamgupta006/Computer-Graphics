@@ -16,4 +16,16 @@ The Algorithms include drawing algorithms for various primitives such as:-
 3. Ellipse
   1. Midpoint Algorithm
 
-## Transformations
+## Usage
+The programs require libgraph library to access graphics.h headers
+
+Compile the required program using the following command
+```
+g++ FirstTest.cpp -lgraph
+```
+
+This will generate an a.out file which you can run as
+```
+./a.out
+
+```
