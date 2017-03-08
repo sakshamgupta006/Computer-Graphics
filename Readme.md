@@ -6,8 +6,9 @@ The Algorithms include drawing algorithms for various primitives such as:-
 ## Basic Drawing Algorithms
 
 1. Line
-  1. DDA (Digital Differential Analyser)
-  2. Bressenham's Algorithm
+  1. Symmetric DDA(Digital Differential Analyser)
+  2. DDA (Digital Differential Analyser)
+  3. Bressenham's Algorithm
 
 2. Circle
   1. Midpoint Algorithm
