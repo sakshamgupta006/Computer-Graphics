@@ -27,5 +27,4 @@ g++ FirstTest.cpp -lgraph
 This will generate an a.out file which you can run as
 ```
 ./a.out
-
 ```
