@@ -22,33 +22,16 @@ int main(int argc, char const *argv[]) {
   float m = (float)(y2-y1)/(float)(x2-x1);
   float b = y1 - (m*x1);
 
-  cout<<m<<" "<<b;
+  float dely = y2-y1;
+  float delx = x2-x1;
 
-  float dy = y2-y1;
-  float dx = x2-x1;
-  int length = 0;
+  float l = max(abs(delx),abs(dely));
 
-  if (abs(m) <= 1) {
-
-    dx = 1;
-    dy = m*dx;
-    length = abs(x2-x1);
-  }
-  // Slope is the greater than 1
-  else{
-    dy = 1;
-    dx = dy/m;
-    length = abs(y2-y1);
-  }
-
-  if(x1 > x2){
-    dx = -dx;
-    dy = -dy;
-  }
+  float dx = delx/l,dy=dely/l;
 
   float currentX = x1+0.5, currentY = y1+0.5;
 
-  for (size_t i = 0; i < length; i++) {
+  while (floor(currentX)!=x2 && floor(currentY)!=y2) {
     putpixel(floor(currentX), floor(currentY) , 255);
     currentX += dx;
     currentY += dy;
